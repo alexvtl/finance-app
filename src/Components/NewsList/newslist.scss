@@ -1,0 +1,64 @@
+.news_contener {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+.topnews_title {
+  align-self: center;
+}
+
+.news-icon {
+  color: black;
+  height: 25px;
+}
+
+.newslist {
+  height: 70vh;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.article {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: solid 2px white;
+  padding: 10px 0px;
+  gap: 5px;
+  &_title {
+    text-align: justify;
+    font-weight: bold;
+  }
+  &_description {
+    text-align: justify;
+    font-size: 20px;
+  }
+  &_date {
+    font-size: 13px;
+    color: lightgrey;
+  }
+}
+
+.france-icon {
+  width: 25px;
+  cursor: pointer;
+  position: relative;
+  left: 40px;
+}
+
+.england {
+  width: 25px;
+  position: relative;
+  left: 100px;
+  cursor: pointer;
+}
